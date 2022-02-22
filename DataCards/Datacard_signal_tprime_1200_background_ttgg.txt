@@ -1,0 +1,42 @@
+imax 1  number of channels
+jmax 1  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+bin bin1
+observation -1
+------------
+
+shapes signal * /eos/user/s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/ROOT_output/MyrootFile_after_training_Tprime_600_ttgg_background_test_with_TPrime1200.root signal
+shapes background * /eos/user/s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/ROOT_output/MyrootFile_after_training_Tprime_600_ttgg_background_test_with_TPrime1200.root background
+shapes data_obs * /eos/user/s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/ROOT_output/MyrootFile_after_training_Tprime_600_ttgg_background_test_with_TPrime1200.root data_obs
+
+-------------
+
+# now we list the expected events for signal and all backgrounds in that bin
+# the second 'process' line must have a positive number for backgrounds, and 0 for signal
+# then we list the independent sources of uncertainties, and give their effect (syst. error)
+# on each process and bin
+
+bin             bin1         bin1      
+process         signal       background   
+process          0             1         
+rate             -1             -1         
+---------------
+
+deltaS                 lnN      1.20     -      20%    uncertanity on signal
+deltaB                 lnN      -       1.50    50%    uncertanity on background    
+
+
+
+
+
+
+
+#lumi_14TeV                      lnN           1.01      1.01       1.01       1.01
+#electron_ID                     lnN            1.005     1.005    1.005    1.005
+#muon_ID                         lnN             1.005    1.005    1.005    1.005
+#jer                             lnN             1.08    1.067  1.067    1.067
+#jer is taken 3% and it is propagated for average number of jets in the assosiated bkg/signal
+jes                             lnN             1.0264  1.0224  1.0224   1.0224
+#jes is taken 1% and it is propagated for average number of jets in the assosiated bkg/signal
+~                                                                                         
