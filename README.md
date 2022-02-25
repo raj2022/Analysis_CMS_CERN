@@ -64,4 +64,4 @@
  *Step 5*:-
   ## Use the output from the earlier step as to make the [Brazil plots](https://github.com/raj2022/HiggsAnalysis/tree/main/Brazil_plots) 
 
-In the plot when the [theoretical crosssection](https://twiki.cern.ch/twiki/bin/viewauth/CMS/B2GMonteCarlo) and the plotted one cross eachoter then this should be the limits.
+In the plot when the [theoretical crosssection](https://twiki.cern.ch/twiki/bin/viewauth/CMS/B2GMonteCarlo) and the plotted one cross each other then this should be the limits.
