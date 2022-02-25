@@ -10,7 +10,7 @@
  
       from ROOT import TCanvas, TPad, TFormula, TF1, TPaveLabel, TH1F, TFile,TH1D
       from ROOT import gROOT, gBenchmark
-      f = TFile("/eos/home-    s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/ROOT_output/MyrootFile_after_training_Tprime_600_all_five_background_test_with_TPrime1200.root", "RECREATE")
+      f = TFile("/eos/home-s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/ROOT_output/MyrootFile_after_training_Tprime_600_all_five_background_test_with_TPrime1200.root", "RECREATE")
        # tree = TTree("root",  )
        # How do we get that to create and fill with the background and signal
        h_bak = TH1D("background", "background", 100, 0,1)
@@ -42,4 +42,7 @@
      Inside Terminal(lxplus):
       1. cd CMSSW_10_2_13/src 
       2. cmsenv
+      
+*step 4*:-
+ ## 
 
