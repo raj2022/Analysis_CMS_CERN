@@ -44,5 +44,15 @@
       2. cmsenv
       
 *step 4*:-
- ## 
-
+ ## Use Comined limit tools to Run the Datacards
+   It will give output as a .root file of the corresponding datacars.
+   text2workspace.py "Datacard.txt" (both should be in the same folder or specify the path properly)
+      e.g. "text2workspace.py Datacard_signal_tprime_1200_background_all_five_backgrounds_except_thq.txt" 
+    further, 
+    **use the combine tools on the "Output of Datacard as .root file" -M AsymptoticLimits** to obtain the CLs.
+    e.g.
+    combine Datacard_signal_tprime_900_background_all_five_backgrounds_except_thq.root -M AsymptoticLimits
+ 
+ This will give us a output as "higgsCombine1200.AsymptoticLimits.mH120.root" which will be used in making the [Brazil_plot](https://github.com/raj2022/HiggsAnalysis/tree/main/Brazil_plots)
+ *Step 5*:-
+ 
