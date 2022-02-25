@@ -1,0 +1,8 @@
+After having prepare the datacard,
+  1. Run combined tools on the datacard, it would give us a higgscombine file:
+          combine "Datacard_file" -n "Number you want to give your file"
+          such as,
+             combine Datacard_signal_tprime_900_background_ttgg.root -n t_900 
+   2. Use the combine output .root file in the "makeBrazilPlot.c" and run it using:
+          -> root BrazilPlot.c
+          
