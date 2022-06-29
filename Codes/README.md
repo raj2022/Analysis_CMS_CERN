@@ -3,7 +3,7 @@
 1. For the training of the Deep Neural Network(DNN), the ntuples have been divided for training and validation samples.
 2. for the training of the DNN, the Keras Sequential model have been used.
 **DNN Model**
-
+```
 clf = Sequential()
 # clf.add(LSTM(1, return_sequences=True ))
 clf.add(BatchNormalization(input_shape = (42,)))
@@ -46,3 +46,4 @@ clf.compile(loss = 'binary_crossentropy',
 print('Summary of the built model...')
 print(clf.summary())
 # plot_model(clf, to_file='/eos/user/s/sraj/M.Sc._Thesis/Plot_M.Sc._thesis/DNN/600-700/''clf_plot_model___.pdf', show_shapes=True, show_layer_names=True)
+```
